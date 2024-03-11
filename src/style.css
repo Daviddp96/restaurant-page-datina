@@ -81,13 +81,14 @@ ul {
     padding: 2rem;
 }
 
-.home__section {
+.home__section,
+.contact__section {
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 2rem;
     text-align: justify;
-    max-width: 686px;
+    max-width: 900px;
     margin: 0 auto;
 }
 
@@ -95,6 +96,7 @@ ul {
     font-weight: 500;
     text-align: center;
     line-height: 1.5;
+    font-size: 1.1rem;
 }
 
 .home__section p:first-child {
@@ -106,7 +108,6 @@ ul {
     height: auto;
     border-radius: 0.5rem;
     align-self: center;
-    max-width: 686px;
     box-shadow: 0px 7px 10px -3px rgba(0,0,0,0.6);
 }
 
@@ -136,6 +137,18 @@ ul {
     display: flex;
     justify-content: space-between;
     width: 100%;
+}
+
+.contact__section {
+    color: #fff;
+    background-color: var(--clr-primary);
+    padding: 2rem;
+    box-shadow: 0px 7px 10px -3px rgba(0,0,0,0.6);
+    border-radius: 0.5rem;
+}
+
+.contact__section img {
+    border-radius: 0.5rem;
 }
 
 .footer {

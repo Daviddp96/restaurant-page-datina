@@ -1,4 +1,5 @@
 import loadHome from "./home";
+import loadContact from "./contact";
 import { createHeading } from "./tags";
 
 function createNav() {
@@ -29,7 +30,7 @@ function createNav() {
   contactButton.addEventListener("click", (e) => {
     if (e.target.classList.contains("active")) return;
     setActiveButton(contactButton);
-    //loadContact();
+    loadContact();
   });
 
   nav.appendChild(homeButton);
