@@ -1,3 +1,5 @@
+import mapImg from './images/map.png';
+
 function createContact() {
     const contact = document.createElement('section')
     contact.classList.add('contact__section')
@@ -9,8 +11,8 @@ function createContact() {
     address.textContent = 'Somewhere, Somewhere City, Somewhere Lane, SomeCountry'
   
     const restaurantLocation = document.createElement('img')
-    restaurantLocation.src = 'images/map.png'
-    restaurantLocation.alt = 'Datina Location'
+    restaurantLocation.src = mapImg;
+    restaurantLocation.alt = 'Datina Location';
   
     contact.appendChild(phoneNumber)
     contact.appendChild(address)

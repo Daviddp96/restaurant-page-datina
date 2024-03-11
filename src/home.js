@@ -1,3 +1,4 @@
+import pizzaImg from './images/home-img.jpg';
 import { createHeading, createParagraph, createListItem } from "./tags";
 
 function createHome() {
@@ -5,7 +6,7 @@ function createHome() {
   home.classList.add("home__section");
 
   const restaurantImage = document.createElement("img");
-  restaurantImage.src = "/images/home-img.jpg";
+  restaurantImage.src = pizzaImg;
   restaurantImage.alt = "A tasty pizza made at Datina";
   restaurantImage.classList.add('home__img');
 

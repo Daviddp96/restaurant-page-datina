@@ -1,6 +1,7 @@
 import loadHome from "./home";
 import loadMenu from "./menu";
 import loadContact from "./contact";
+import datinaLogo from './images/logo.svg';
 import { createHeading } from "./tags";
 
 function createNav() {
@@ -46,7 +47,7 @@ function createHeader() {
   header.classList.add("header");
 
   const headerLogo = document.createElement("img");
-  headerLogo.src = "/dist/images/logo.svg";
+  headerLogo.src = datinaLogo;
   headerLogo.alt = "Datina Logo";
 
   const headerTitle = createHeading(1, "Authentic & Delicious Pizza");
