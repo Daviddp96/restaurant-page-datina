@@ -1,0 +1,32 @@
+{
+  "name": "restaurant-page-datina",
+  "version": "1.0.0",
+  "description": "Practice SPA with Vanilla JS, ES6 Modules and Webpack",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Daviddp96/restaurant-page-datina.git"
+  },
+  "keywords": [
+    "Webpack",
+    "ES6",
+    "Modules"
+  ],
+  "author": "David",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Daviddp96/restaurant-page-datina/issues"
+  },
+  "homepage": "https://github.com/Daviddp96/restaurant-page-datina#readme",
+  "devDependencies": {
+    "css-loader": "^6.10.0",
+    "html-webpack-plugin": "^5.6.0",
+    "style-loader": "^3.3.4",
+    "webpack": "^5.90.3",
+    "webpack-cli": "^5.1.4"
+  }
+}
