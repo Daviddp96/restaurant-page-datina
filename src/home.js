@@ -9,32 +9,6 @@ function createHome() {
   restaurantImage.alt = "A tasty pizza made at Datina";
   restaurantImage.classList.add('home__img');
 
-  const featuresList = document.createElement("ul");
-  featuresList.classList.add("home__features-list");
-
-  const features = [
-    createListItem("Hand-tossed dough made daily"),
-    createListItem("Unique and classic topping combinations"),
-    createListItem("Warm, inviting atmosphere"),
-    createListItem(
-      "Perfect for a casual lunch, family dinner, or gathering with friends"
-    ),
-  ];
-
-  for (const feature of features) {
-    featuresList.appendChild(feature);
-  }
-
-  const hoursList = document.createElement("ul");
-  const hours = [
-    createListItem("Sunday - Thursday: 10:00 AM - 6:00 PM"),
-    createListItem("Friday & Saturday: 11:00 AM - 10:00 PM"),
-  ];
-
-  for (const hour of hours) {
-    hoursList.appendChild(hour);
-  }
-
   home.appendChild(createParagraph("A Slice of Tradition Since 2020"));
   home.appendChild(restaurantImage);
   home.appendChild(
@@ -42,13 +16,25 @@ function createHome() {
       `Welcome to Datina, your neighborhood haven for authentic, delicious pizzas! We've been serving up slices of joy since 2020, using only the freshest ingredients and time-honored recipes.`
     )
   );
-  home.appendChild(
-    createHeading(2, "Step inside and experience the Datina difference:")
-  );
-  home.appendChild(featuresList);
   home.appendChild(createHeading(2, "Come hungry, leave happy!"));
-  home.appendChild(createHeading(3, "Hours of Operation:"));
-  home.appendChild(hoursList);
+
+  const hoursDiv = document.createElement('div');
+  hoursDiv.classList.add('hours__container');
+
+  home.appendChild(hoursDiv);
+  hoursDiv.appendChild(createHeading(3, "Hours of Operation:"));
+
+  const hoursList = document.createElement("ul");
+  const hours = [
+    createListItem("<strong>Sunday - Thursday:</strong> 10:00 AM - 6:00 PM"),
+    createListItem("<strong>Friday & Saturday:</strong> 11:00 AM - 10:00 PM"),
+  ];
+
+  for (const hour of hours) {
+    hoursList.appendChild(hour);
+  }
+
+  hoursDiv.appendChild(hoursList);
 
   return home;
 }

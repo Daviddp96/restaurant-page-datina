@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 :root {
-    --clr-primary: #e80c4a;
+    --clr-primary: #c50c40;
     --clr-secondary: #f6cd00;
+    --clr-footer: #800628;
 }
 
 * {
@@ -10,7 +13,8 @@
 }
 
 body {
-    font-family: sans-serif;
+    font-family: 'Montserrat';
+    background-color: #f1f1f1;
 }
 
 ul {
@@ -53,14 +57,24 @@ ul {
 }
 
 .button {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     font-family: sans-serif;
-    font-weight: bold;
+    font-weight: 400;
+    letter-spacing: 1px;
     background: none;
     border: none;
     outline: none;
     transition: all 0.4s;
     color: #fff;
+    cursor: pointer;
+}
+
+.button:hover {
+    transform: translateY(-3px);
+}
+
+.active {
+    color: var(--clr-secondary);
 }
 
 .main {
@@ -71,13 +85,72 @@ ul {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     gap: 2rem;
+    text-align: justify;
+    max-width: 686px;
+    margin: 0 auto;
+}
+
+.home__section p {
     text-align: center;
+    line-height: 1.5;
+}
+
+.home__section p:first-child {
+    font-weight: bold;
 }
 
 .home__img {
     width: 100%;
     height: auto;
     border-radius: 0.5rem;
+    align-self: center;
+    max-width: 686px;
+}
+
+.home__section h2 {
+    text-align: center;
+}
+
+.hours__container {
+    color: white;
+    background-color: var(--clr-primary);
+    padding: 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    border-radius: 0.5rem;
+}
+
+.hours__container ul {
+    width: 90%;
+}
+
+.hours__container li {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.footer {
+    padding: 2rem;
+    background-color: var(--clr-footer);
+    text-align: center;
+    color: #fff;
+    font-size: 1.1rem;
+    margin-top: 2rem;
+}
+
+.footer a {
+    display: inline-block;
+    text-decoration: none;
+    color: #ffe357;
+    transition: all 0.4s;
+}
+
+.footer a:hover {
+    transform: translateY(-2px);
 }

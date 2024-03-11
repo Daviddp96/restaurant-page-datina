@@ -3,7 +3,7 @@ import { createHeading } from "./tags";
 
 function createNav() {
   const nav = document.createElement("nav");
-  nav.classList.add('main-nav');
+  nav.classList.add("main-nav");
 
   const homeButton = document.createElement("button");
   homeButton.classList.add("button");
@@ -47,7 +47,7 @@ function createHeader() {
   headerLogo.src = "/dist/images/logo.svg";
   headerLogo.alt = "Datina Logo";
 
-  const headerTitle = createHeading(1, "Authentic Pizza");
+  const headerTitle = createHeading(1, "Authentic & Delicious Pizza");
   headerTitle.classList.add("header__title");
 
   header.appendChild(headerLogo);
@@ -76,10 +76,28 @@ function setActiveButton(button) {
   button.classList.add("active");
 }
 
+function createFooter() {
+  const footer = document.createElement('footer');
+  footer.classList.add('footer');
+
+  const footerMarkup = `<p>
+    Made by <a href='https://github.com/Daviddp96'>David</a></p>
+  </p>`;
+
+  const div = document.createElement('div');
+  div.innerHTML = footerMarkup;
+
+  footer.appendChild(div);
+
+  return footer;
+}
+
 function initializeWebsite() {
   const content = document.getElementById("content");
   content.appendChild(createHeader());
   content.appendChild(createMain());
+  content.appendChild(createFooter());
+  setActiveButton(document.querySelector(".button"));
   loadHome();
 }
 

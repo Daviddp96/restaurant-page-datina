@@ -16,7 +16,7 @@ function createParagraph(text) {
 
 function createListItem(text) {
     const listItemElement = document.createElement('li');
-    listItemElement.textContent = text;
+    listItemElement.innerHTML = text;
     return listItemElement;
 }
 
