@@ -5,7 +5,7 @@ function createHome() {
   home.classList.add("home__section");
 
   const restaurantImage = document.createElement("img");
-  restaurantImage.src = "/dist/images/home-img.jpg";
+  restaurantImage.src = "/images/home-img.jpg";
   restaurantImage.alt = "A tasty pizza made at Datina";
   restaurantImage.classList.add('home__img');
 
