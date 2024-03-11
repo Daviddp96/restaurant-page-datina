@@ -1,4 +1,5 @@
 import loadHome from "./home";
+import loadMenu from "./menu";
 import loadContact from "./contact";
 import { createHeading } from "./tags";
 
@@ -21,7 +22,7 @@ function createNav() {
   menuButton.addEventListener("click", (e) => {
     if (e.target.classList.contains("active")) return;
     setActiveButton(menuButton);
-    //loadMenu();
+    loadMenu();
   });
 
   const contactButton = document.createElement("button");
